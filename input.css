@@ -6,10 +6,20 @@
     h3{
         @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
     }
+    h5{
+        @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
+    }
 }
 
 .section-container {
-    @apply max-w-6xl mx-auto text-center;
+    @apply max-w-6xl mx-auto text-center px-10;
+}
+.section-references {
+    @apply flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0;
+}
+
+.section-content {
+    @apply max-w-3xl mx-auto leading-9 text-center text-grayishBlue;
 }
 
 .button-container{
@@ -26,4 +36,8 @@ body {
     body{
         background-image: url('../images/bg-header-mobile.png');
     }
+}
+
+.ficon:hover {
+    filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
 }
